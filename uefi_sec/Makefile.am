@@ -5,6 +5,7 @@ AM_CFLAGS = -Wall -g \
         -Wstrict-prototypes \
         -Wno-trigraphs \
         -I$(top_srcdir)/../smcinvoke/inc \
+        -I$(top_srcdir)/../mink/inc/interface \
         -I$(top_srcdir)/../tzcommon/inc
 
 ACLOCAL_AMFLAGS = -I m4
