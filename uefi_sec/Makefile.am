@@ -21,5 +21,5 @@ bin_PROGRAMS = uefi_sec
 uefi_sec_SOURCES = uefi_sec.c SecureUILib.h
 uefi_sec_CPPFLAGS = $(AM_CPPFLAGS)
 uefi_sec_CFLAGS = $(AM_CFLAGS)
-uefi_sec_LDFLAGS = -lpthread -ldl -lQseeComApi -ldrmfs -lrpmb -lssd -
+uefi_sec_LDFLAGS = -lpthread -ldl -lQseeComApi -ldrmfs -lrpmb -lssd
 uefi_sec_LDADD = -lQseeComApi -ldmabufheap -lqcbor -lminkdescriptor
