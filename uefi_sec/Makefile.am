@@ -4,17 +4,14 @@ AM_CFLAGS = -Wall -g \
         -Wundef \
         -Wstrict-prototypes \
         -Wno-trigraphs \
-        $(SECUREMSMNOSHIP_CFLAGS) \
         -I$(top_srcdir)/../smcinvoke/inc \
-        -I$(top_srcdir)/../mink/inc/interface \
         -I$(top_srcdir)/../tzcommon/inc
 
 ACLOCAL_AMFLAGS = -I m4
 
 AM_CPPFLAGS = -D__packed__= \
     -DFEATURE_LE_DIAG \
-    -DOE \
-    $(SECUREMSMNOSHIP_CFLAGS)
+    -DOE
 
 bin_PROGRAMS = uefi_sec
 
